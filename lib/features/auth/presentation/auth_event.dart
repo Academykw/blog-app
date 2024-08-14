@@ -7,7 +7,10 @@ sealed class AuthEvent {}
   final String email;
   final String password;
 
-  AuthSignUp(this.name, this.email, this.password);
+  AuthSignUp({
+     required this.name,
+   required  this.email,
+   required this.password});
 
 
  }
