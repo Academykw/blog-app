@@ -1,0 +1,4 @@
+class AppSecret{
+  final String superBaseUrl ='https://jbgerzwepxjpdydeymai.supabase.co';
+  final String superBaseApiKey ='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImpiZ2VyendlcHhqcGR5ZGV5bWFpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjIxMTEzNDMsImV4cCI6MjAzNzY4NzM0M30.I4hr3HhSwFods4XeA4dTNVu5wU_1dQ9VYG4igs4qW2I';
+}
