@@ -1,10 +1,12 @@
 import 'package:class1/core/theme/app_pallete.dart';
+import 'package:class1/features/auth/presentation/auth_bloc.dart';
 import 'package:class1/features/auth/presentation/pages/login_page.dart';
 import 'package:class1/features/auth/presentation/widgets/auth_gradient_button.dart';
 import 'package:class1/features/auth/presentation/widgets/authfield.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 class SignUpPge extends StatefulWidget {
   static route() => MaterialPageRoute(
     builder: (context) => SignUpPge(),);
@@ -65,6 +67,20 @@ class _SignUpPgeState extends State<SignUpPge> {
 
               AuthGradientButton(
                 buttonText: 'Sign Up',
+                onPressed: (){
+
+                  if(formKey.currentState!.validate()){
+                  context.read<AuthBloc>().add(AuthSignUp(
+                      name:nameController.text.trim(),
+                      email:emailController.text.trim(),
+                      password :passwordController.text.trim())
+                    ,);
+
+
+
+                  }
+                },
+
               ),
 
               const SizedBox(height: 20,),
