@@ -60,6 +60,9 @@ class _SignInPgeState extends State<SignInPge> {
               ),
               const SizedBox(height: 20,),
               AuthGradientButton(
+                onPressed: (){
+
+                },
                 buttonText: 'Sign In',),
 
               const SizedBox(height: 20,),
